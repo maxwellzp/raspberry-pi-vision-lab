@@ -4,6 +4,9 @@ venv/
 # Photos and videos
 storage/
 
+# Application logs
+logs/
+
 # Python cache
 __pycache__/
 *.pyc
