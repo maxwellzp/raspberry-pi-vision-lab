@@ -7,9 +7,15 @@ storage/
 # Application logs
 logs/
 
+# Yolo models
+ml/yolo/models/
+
 # Python cache
 __pycache__/
 *.pyc
 
 # VS Code
 .vscode/
+
+# Output from terminal
+terminal.txt
