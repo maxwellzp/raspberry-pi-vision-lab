@@ -4,21 +4,11 @@ from pathlib import Path
 import cv2
 import time
 import logging
-
-def setup_logging(log_file) -> None:
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s | %(levelname)s | %(message)s",
-        handlers=[
-            logging.FileHandler(log_file),
-            logging.StreamHandler()
-        ]
-    )
+from utils.logger import setup_logging
 
 def main():
     # Logger initialization
     logs_dir = Path("logs")
-    logs_dir.mkdir(exist_ok=True)
     setup_logging(logs_dir / "motion.log")
 
     # Motion directory setup
