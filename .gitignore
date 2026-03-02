@@ -9,6 +9,10 @@ logs/
 
 # Yolo models
 ml/yolo/models/
+ml/yolo26n/models/
+
+# InsightFace data
+ml/face/known_faces/
 
 # Python cache
 __pycache__/
