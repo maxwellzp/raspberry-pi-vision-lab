@@ -11,10 +11,6 @@ config = picam2.create_preview_configuration(
     transform=Transform(hflip=1, vflip=1)
 )
 picam2.configure(config)
-# picam2.preview_configuration.main.size = (640, 480)
-# picam2.preview_configuration.main.format = "RGB888"
-# picam2.preview_configuration.align()
-# picam2.configure("preview")
 picam2.start()
 
 # Load the YOLO26 model
