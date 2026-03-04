@@ -1,0 +1,16 @@
+sudo apt update
+sudo apt full-upgrade
+
+sudo apt install -y python3-picamera2
+
+We strongly recommend installing and updating Picamera2 using apt which will avoid compatibility problems.
+
+
+
+OpenCV
+sudo apt install -y python3-opencv
+sudo apt install -y opencv-data
+
+TensorFlow Lite
+pip3 install tflite-runtime
+
