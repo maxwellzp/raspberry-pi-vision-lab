@@ -17,7 +17,7 @@ def main():
     embeddings = []
 
     with CameraManager() as camera:
-        print("Смотрим в камеру... Нажми 's' чтобы сохранить лицо")
+        print("Look at the camera... Press 's' to save a photo")
 
         while True:
             frame = camera.capture_array()
@@ -33,7 +33,7 @@ def main():
 
             if key == ord("s") and faces:
                 embeddings.append(faces[0].embedding)
-                print(f"Сохранено: {len(embeddings)}")
+                print(f"Saved: {len(embeddings)}")
 
             if key == ord("q"):
                 break
@@ -41,7 +41,7 @@ def main():
     if embeddings:
         mean_embedding = np.mean(embeddings, axis=0)
         np.save(f"{SAVE_DIR}/{NAME}.npy", mean_embedding)
-        print("Лицо сохранено!")
+        print("Face photo saved!")
 
     cv2.destroyAllWindows()
 
