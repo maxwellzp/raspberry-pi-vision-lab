@@ -23,3 +23,6 @@ __pycache__/
 
 # Output from terminal
 terminal.txt
+
+# Ignore images from dataset directory
+ml/yolo/datasets/mandarin/images
