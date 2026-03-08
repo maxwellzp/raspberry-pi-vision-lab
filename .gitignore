@@ -2,7 +2,8 @@
 venv/
 
 # Photos and videos
-storage/
+storage/*
+!storage/.gitkeep
 
 # Application logs
 logs/*
