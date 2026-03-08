@@ -12,6 +12,7 @@ logs/*
 # Yolo models
 ml/yolo/models/
 ml/yolo26n/models/
+*.pt
 
 # InsightFace data
 ml/face/known_faces/
@@ -28,3 +29,4 @@ terminal.txt
 
 # Ignore images from dataset directory
 ml/yolo/datasets/mandarin/images
+
