@@ -4,23 +4,13 @@ from datetime import datetime
 from time import sleep
 from pathlib import Path
 import logging
+from utils.logger import setup_logging
 
 DATE_TIME_FILE_FORMAT = "%Y%m%d_%H%M%S"
 
 def build_filename(storage_dir):
     timestamp = datetime.now().strftime(DATE_TIME_FILE_FORMAT)
     return storage_dir / f"photo_{timestamp}.jpg"
-
-def setup_logging(log_file) -> None:
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s | %(levelname)s | %(message)s",
-        handlers=[
-            logging.FileHandler(log_file),
-            logging.StreamHandler()
-        ]
-    )
-
 
 def main():
     storage_dir = Path("storage/photos")

@@ -3,16 +3,7 @@ from libcamera import Transform
 import cv2
 import logging
 from pathlib import Path
-
-def setup_logging(log_file) -> None:
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s | %(levelname)s | %(message)s",
-        handlers=[
-            logging.FileHandler(log_file),
-            logging.StreamHandler()
-        ]
-    )
+from utils.logger import setup_logging
 
 def main():
     logs_dir = Path("logs")
