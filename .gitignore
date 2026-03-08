@@ -5,7 +5,8 @@ venv/
 storage/
 
 # Application logs
-logs/
+logs/*
+!logs/.gitkeep
 
 # Yolo models
 ml/yolo/models/
